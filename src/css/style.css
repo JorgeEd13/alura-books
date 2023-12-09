@@ -1,0 +1,28 @@
+@import url("./styles/header.css");
+@import url("./styles/banner.css");
+@import url("./styles/carousel.css");
+@import url("./styles/topics.css");
+@import url("./styles/contact.css");
+@import url("./styles/footer.css");
+
+:root {
+    --header-color-link: #000000;
+    --header-background-gradient: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    --background-color: #EBECEE;
+    --carousel-button: #C4C4C4;
+    --card-background-color: #FFFFFF;
+    --font-color-title: #EB9B00;
+    --font-color-title-sec: #002F52;
+    --font-color-footer-title: #858585;
+    --font-color-footer-link: #474646;
+    --footer-background-color: #F9F9F9;
+
+    --font-primary: 'Poppins';
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+}

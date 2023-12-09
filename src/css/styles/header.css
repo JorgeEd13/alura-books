@@ -1,0 +1,62 @@
+.header {
+    background-color: var(--card-background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Somente necessário para "liberar" o position: absolute da .menu-list*/
+}
+
+.header__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../../assets/images/icons/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__image {
+    padding: 1em;
+}
+
+.container__button {
+    display: none;
+}
+
+/* .container__button:checked ~ .header__menu-hamburguer {
+    background: var(--header-background-gradient);
+} */
+
+.menu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container__button:checked ~ .menu-list { /* Conector CSS ~ busca a class anterior para fazer alteração indicada. */
+    display: block;
+}
+
+.menu-list__title, .menu-list__item {
+    padding: 1em;
+    background-color: var(--card-background-color);
+}
+
+.menu-list__title {
+    color: var(--font-color-title);
+    font-weight: 700;
+}
+
+.menu-list__link {
+    background: var(--header-background-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase; 
+}

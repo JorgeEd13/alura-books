@@ -1,0 +1,81 @@
+.carousel__title {
+    color: var(--font-color-title);
+    background-color: var(--card-background-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card {
+    background: var(--card-background-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1em 1em 1.5em;
+    padding: 1em;
+}
+
+.card__description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+/* .description__stars {
+    margin: 0.5em 0 ;
+} */
+
+.description__title {
+    color: var(--font-color-title);
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.description__title-book {
+    color: var(--font-color-title-sec);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.description__text {
+    font-size: 14px;
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons__item {
+    margin: 0 0.5em;
+    scale: 80%;
+}
+
+.buttons__ancor {
+    background-color: var(--font-color-title);
+    padding: 1em 2.2em;
+    color: var(--card-background-color);
+    font-weight: 700;
+    text-decoration: none;
+}

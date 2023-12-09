@@ -1,0 +1,8 @@
+hr {
+    margin: 0;
+}
+
+.footer {
+    background-color: var(--card-background-color);
+    padding: 1em;
+}
