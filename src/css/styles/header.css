@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* Somente necessário para "liberar" o position: absolute da .menu-list*/
+    position: relative;
+    /* Somente necessário para "liberar" o position: absolute da .menu-list*/
 }
 
 .header__menu-hamburguer {
@@ -39,11 +40,13 @@
     width: 60vw;
 }
 
-.container__button:checked ~ .menu-list { /* Conector CSS ~ busca a class anterior para fazer alteração indicada. */
+.container__button:checked~.menu-list {
+    /* Conector CSS ~ busca a class anterior para fazer alteração indicada. */
     display: block;
 }
 
-.menu-list__title, .menu-list__item {
+.menu-list__title,
+.menu-list__item {
     padding: 1em;
     background-color: var(--card-background-color);
 }
@@ -58,15 +61,17 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .container__title,
-.options {
+.options,
+.options__button {
     display: none;
 }
 
 @media screen and (min-width: 1024px) {
+
     .container__title,
     .container__title--bold {
         font-family: var(--font-secondary);
@@ -94,6 +99,12 @@
     .options__link {
         text-decoration: none;
         color: var(--header-color-link);
+    }
+
+    .options__button:checked~.menu-list {
+        /* Conector CSS ~ busca a class anterior para fazer alteração indicada. */
+        display: block;
+        width: auto;
     }
 
     .container__image-transparent,
