@@ -6,3 +6,41 @@ hr {
     background-color: var(--card-background-color);
     padding: 1em;
 }
+
+.footer-list {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 3em 2em 3em 1em;
+    }
+
+    .footer__title {
+        font-size: 24px;
+    }
+
+    .footer-list {
+        display: block;
+        margin-right: 1em;
+    }
+
+    .footer-list__title {
+        font-size: 14px;
+        color: var(--font-color-footer-title);
+    }
+
+    .footer-list__item {
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+    
+    .footer-list__link {
+        color: var(--font-color-footer-link);
+        text-decoration: none;
+        margin-left: 0.5em;
+    }
+}
