@@ -8,16 +8,18 @@
     color: var(--card-background-color);
     font-weight: 300;
     margin: 1em 0;
+    text-transform: uppercase;
 }
 
 .topics__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1em;
 }
 
 .topics__item {
-    margin: 2em 0.5em;
+    margin: 1em 0;
 }
 
 .topics__link {
@@ -30,8 +32,27 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .topics {
+        padding: 0.2em 10vw 1.5em;
+    }
+    
     .topics__title,
     .topics__link {
         font-size: 24px;
+    }
+
+    .topics__item {
+        margin: 2em 0;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .topics {
+        padding: 3em 30vw;
+    }
+
+    .topics__title {
+        font-size: 32px;
+        margin: 0 0 1.5em;
     }
 }
