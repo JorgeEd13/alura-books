@@ -79,3 +79,44 @@
     font-weight: 700;
     text-decoration: none;
 }
+
+@media screen and (min-width: 1024px) {
+    .carousel__title {
+        font-size: 26px;
+    }
+
+    .swiper {
+        width: 80%;
+    }
+
+    .swiper-pagination {
+        margin: 1.5em 0 1em;
+    }
+    
+    .swiper-slide img {
+        scale: 0.8;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        background: var(--header-background-gradient);
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        top: 60%;
+    }
+    
+    .swiper-button-prev {
+        content: url("../../assets/images/icons/SetaEsquerda.svg");
+    }
+    
+    .swiper-button-next {
+        content: url("../../assets/images/icons/SetaDireita.svg");
+    }
+    
+    .card {
+        width: 40%;
+        margin: 1em auto;
+    }
+}
