@@ -3,8 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    /* Somente necessário para "liberar" o position: absolute da .menu-list*/
+    position: relative;    /* Somente necessário para "liberar" o position: absolute da .menu-list*/
 }
 
 .header__menu-hamburguer {
@@ -66,7 +65,8 @@
 
 .container__title,
 .options,
-.options__button {
+.options__button,
+.container__text {
     display: none;
 }
 
@@ -110,5 +110,27 @@
     .container__image-transparent,
     .header__menu-hamburguer {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .header {
+        padding: 0 2em;
+    }
+
+    .options {
+        padding: 1.5em;
+        margin-right: auto;
+    }
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--header-color-link);
+    }
+    
+    .container__text {
+        display: block;
     }
 }
