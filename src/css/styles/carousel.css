@@ -119,6 +119,10 @@
         width: 40%;
         margin: 1em auto;
     }
+
+    .buttons__item:hover, .buttons__ancor:hover {
+        scale: 1.1;
+    }
 }
 
 @media screen and (min-width: 1728px) {
