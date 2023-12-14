@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;    /* Somente necessário para "liberar" o position: absolute da .menu-list*/
+    position: relative;
+    /* Somente necessário para "liberar" o position: absolute da .menu-list*/
 }
 
 .header__menu-hamburguer {
@@ -28,11 +29,11 @@
     display: none;
 }
 
-.container__button:checked ~ .container__label > .header__menu-hamburguer {
+.container__button:checked~.container__label>.header__menu-hamburguer {
     background-image: url("../../assets/images/icons/MenuInvertido.svg");
 }
 
-.container__button:checked ~ .container__label {
+.container__button:checked~.container__label {
     background: var(--header-background-gradient);
 }
 
@@ -65,6 +66,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .container__title,
@@ -93,10 +95,11 @@
 
     .options {
         display: flex;
+        padding-top: 1em;
     }
 
     .options__item {
-        padding: 0 1em;
+        padding: 1em 1em 2em;
         text-transform: uppercase;
     }
 
@@ -111,6 +114,19 @@
         width: auto;
     }
 
+    .options__button:checked~.options__label>.options__item {
+        background: var(--header-background-gradient);
+        color: var(--card-background-color);
+    }
+
+    .menu-list__item:hover {
+        background: var(--header-background-gradient);
+    }
+    
+    .menu-list__item:hover>.menu-list__link {
+        -webkit-text-fill-color: var(--card-background-color);
+    }
+    
     .container__image-transparent,
     .header__menu-hamburguer {
         display: none;
@@ -123,7 +139,7 @@
     }
 
     .options {
-        padding: 1.5em;
+        padding-left: 1.5em;
         margin-right: auto;
     }
 
@@ -133,7 +149,7 @@
         text-decoration: none;
         color: var(--header-color-link);
     }
-    
+
     .container__text {
         display: block;
     }
