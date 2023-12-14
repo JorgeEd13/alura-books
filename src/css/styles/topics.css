@@ -44,6 +44,10 @@
     .topics__item {
         margin: 2em 0;
     }
+
+    .topics__item:hover {
+        scale: 1.1;
+    }
 }
 
 @media screen and (min-width: 1728px) {
